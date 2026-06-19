@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShankSlow Tarot</title>
+  <link rel="stylesheet" href="css/chapter2.css" />
+</head>
+<body>
+  <main class="page">
+    <h1 class="title">•⁺🕯 ꜱʜᴀɴᴋꜱʟᴏᴡ ᴛᴀʀᴏᴛ ⋆⁺₊⋆</h1>
+
+    <!-- หน้าแรก -->
+    <section id="startScreen" class="screen start-screen active">
+      <div class="single-card-wrap">
+        <img class="single-card" src="assets/cards/back.png" alt="LOVER card back" />
+      </div>
+      <button id="shuffleBtn" class="btn btn-primary">สุ่มไพ่</button>
+    </section>
+
+    <!-- Animation สับไพ่ -->
+    <section id="shuffleScreen" class="screen shuffle-screen">
+      <div class="shuffle-stack">
+        <img class="shuffle-card card-a" src="assets/cards/back.png" alt="card back" />
+        <img class="shuffle-card card-b" src="assets/cards/back.png" alt="card back" />
+      </div>
+    </section>
+
+    <!-- หน้าเลือกไพ่ -->
+    <section id="pickScreen" class="screen pick-screen">
+      <div id="deckArea" class="deck-area"></div>
+      <p id="pickText" class="pick-text">เลือกไพ่ 3 ใบ</p>
+      <div class="button-row">
+        <button id="resetBtn" class="btn btn-secondary">สุ่มใหม่อีกครั้ง</button>
+        <button id="readBtn" class="btn btn-primary hidden">อ่านคำทำนาย</button>
+      </div>
+    </section>
+
+    <!-- Loading -->
+    <section id="loadingScreen" class="screen loading-screen">
+      <p class="loading-title">กำลังเรียงไพ่ของท่านอยู่ โปรดรอสักครู่</p>
+      <div class="spinner"></div>
+      <p class="warning"><b>คำเตือน</b> เป็นความเชื่อส่วนบุคคล แต่เชื่อเถอะนะ อิอิ</p>
+    </section>
+
+    <!-- ผลลัพธ์ -->
+    <section id="resultScreen" class="screen result-screen">
+      <div id="resultList" class="result-list"></div>
+      <button id="againBtn" class="btn btn-primary result-again">เสร็จสิ้น</button>
+    </section>
+  </main>
+
+  <script src="js/chapter2.js"></script>
+</body>
+</html>

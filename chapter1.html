@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 1 - Spot The Difference</title>
+  <link rel="stylesheet" href="css/chapter1.css">
+</head>
+<body>
+
+<main class="game-page">
+
+  <header class="top-bar">
+    <h1>ʟᴇᴠᴇʟ <span id="levelNo">1</span></h1>
+
+    <div class="status">
+      <div>เจอแล้ว <b id="foundText">0/5</b></div>
+      <div>เวลา <b id="timeText">02:00</b></div>
+      <div>คะแนน <b id="scoreText">0</b></div>
+    </div>
+  </header>
+
+  <div class="time-line">
+    <div id="timeBar"></div>
+  </div>
+
+  <section class="photo-board">
+    <div class="photo-card">
+      <img id="originalImg" src="" alt="original">
+    </div>
+
+    <div class="photo-card">
+      <div class="click-area" id="clickArea">
+        <img id="changedImg" src="" alt="changed">
+        <div id="markerLayer"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="controls">
+    <button id="hintBtn">คำใบ้</button>
+    <button id="answerBtn">เฉลย</button>
+  </div>
+
+</main>
+
+<div id="popup" class="popup hidden">
+  <div class="popup-box">
+    <h2 id="popupTitle"></h2>
+    <p id="popupText"></p>
+    <button id="popupBtn">ตกลง</button>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="js/chapter1.js"></script>
+</body>
+</html>
